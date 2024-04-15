@@ -1,0 +1,144 @@
+:root{
+  --input-color: hsl(124, 87%, 79%);;
+  --input-color2: hsl(124, 83%, 75%);;
+}
+.app{
+  font-family: sans-serif;
+  background-color: black;
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;;
+  justify-content: center;
+}
+
+main{
+  margin-top: 3vh;
+  width: 90%;
+  min-width: 320px;
+  max-width: 500px;
+  
+  color: rgba(255, 255, 255, 0.6);
+  padding-inline: 1rem;
+}
+
+main > * {
+  padding-inline: 1rem; 
+}
+
+
+main h2{
+  color: rgba(255,255,255,0.3);
+  font-size: clamp(1rem, 16px + 2vh, 1.5rem);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.top p{
+  width: 80%;
+  font-size: 1.8rem;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.top{
+  background-color: #24232A;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  width: 100%;;
+  height: 50px;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
+.len{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.len h3{
+  font-size: 0.8rem;
+  margin-top: 0.9rem;
+}
+.len p{
+  font-size: 1.8rem;
+  color: var(--input-color);
+}
+.bottom{
+  background-color: #24232A;
+  width: 100%;
+  
+  
+  display: flex;
+  padding-top: 0.5rem;
+  flex-direction: column;
+}
+
+.options{
+  margin-bottom: 2vh;
+}
+.options > div{
+  display: flex; 
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.4rem;
+}
+
+.options label{
+  word-spacing: 0.3rem;
+}
+
+#copy{
+  cursor: pointer;
+  color: var(--input-color);
+}
+
+input[type="range"]{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+button{
+  width: 100%;
+  height: 3.2rem;
+  margin-top: auto;
+  margin-bottom: 1rem;
+  border: 2px solid var(--input-color);
+  color: var(--input-color);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.strength{
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  
+  padding-inline: 1rem;
+  color: white;
+  margin-bottom: 2vh;
+}
+.strength > div{
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.strength h3{
+  margin-top: 2px;
+}
+.bar{
+  width: 6px;
+  height: 18px;
+  border: 1px solid white;
+}
+
+input[type="checkbox"], input[type="range"]{
+  accent-color: var(--input-color);
+}
+
